@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Playlist Builder</title>
+  <link rel="stylesheet" href="la.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Music Playlist Builder</h1>
+
+    <div class="form-section">
+      <input type="text" id="title" placeholder="Song Title">
+      <input type="text" id="artist" placeholder="Artist">
+      <input type="text" id="genre" placeholder="Genre">
+      <input type="number" id="duration" placeholder="Duration (minutes)">
+      <button id="addBtn">Add Song</button>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search songs...">
+
+      <select id="sort">
+        <option value="default">Sort By</option>
+        <option value="title">Title</option>
+        <option value="artist">Artist</option>
+        <option value="duration">Duration</option>
+      </select>
+
+      <select id="filter">
+        <option value="all">All Genres</option>
+        <option value="Pop">Pop</option>
+        <option value="Rock">Rock</option>
+        <option value="Rap">Rap</option>
+        <option value="Jazz">Jazz</option>
+      </select>
+    </div>
+
+    <div class="stats">
+      <h3>Total Songs: <span id="totalSongs">0</span></h3>
+      <h3>Total Duration: <span id="totalDuration">0</span> min</h3>
+    </div>
+
+    <div id="playlist"></div>
+
+  </div>
+
+  <script src="les.js"></script>
+</body>
+</html>
